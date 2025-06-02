@@ -34,11 +34,23 @@ const createGrid = (amtOfGrids) => {
             //     box.style.backgroundColor = ('rgb(92, 54, 28)');
             // })
 
-            // Hover effect with random RGB
-            const {r, g, b} = createRandomRGB();
+            // // Hover effect with random RGB
+            // const {r, g, b} = createRandomRGB();
+            // box.addEventListener("mouseenter", () => {
+            //     const bgColor = "rgb(" + r + "," + g + "," + b + ")"
+            //     box.style.backgroundColor = (bgColor);
+            // })
+
+            // Hover effect with 10% darkening effect 
             box.addEventListener("mouseenter", () => {
-                const bgColor = "rgb(" + r + "," + g + "," + b + ")"
-                box.style.backgroundColor = (bgColor);
+                const currentOpacity = box.style.opacity;
+                box.style.backgroundColor = ('rgb(92, 54, 28)');
+                if (currentOpacity) {
+                    box.style.opacity = Number(currentOpacity) + 0.1;
+                } else { 
+                    box.style.opacity = 0.1;
+                }
+                
             })
 
             row.appendChild(box);
