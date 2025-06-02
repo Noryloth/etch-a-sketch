@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    width: 960px;
+}
+
+.grid-row {
+    display: flexbox;
+}
+
+.box {
+    border: 1px solid lightcoral;
+    background-color: bisque;
+}
