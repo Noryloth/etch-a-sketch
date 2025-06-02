@@ -30,7 +30,7 @@ createGrid(sizeOfGrid);
 const allDivs = document.querySelectorAll(".box");
 allDivs.forEach(div => {
     div.addEventListener('mouseenter', () => {
-        div.style.backgroundColor = 'rgb(124, 111, 95)';
+        div.style.backgroundColor = 'rgb(124, 111, 94)';
     })
 })
 
